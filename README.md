@@ -48,9 +48,269 @@ Deploy the Portfolio.
 Upload to GitHub Pages for free hosting.
 
 ## PROGRAM
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Chintala Aman Monty</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Monty</span></h1>
+            <p>2nd Year IT Student | Aspiring Full Stack Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-img">
+            <img src="image.png" alt="Monty Profile Picture" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am currently pursuing a B.Tech degree in Information Technology at Saveetha Engineering College. 
+            I have a strong interest in Data Science and Web Development, and I am eager to apply my theoretical 
+            knowledge in practical settings.I am keen on exploring opportunities for skill development and professional
+            growth within the technology sector, with a focus on contributing to innovative projects and earning 
+            industry-relevant certifications.Passionate about technology, I enjoy learning new tools and frameworks
+            to build interactive web applications.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>Java</div>
+            <div>C</div>
+            <div>Python</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>React</div>
+            <div>UiPath</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal website built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Local Business Website</h3>
+                <p>Website for a local business with booking and contact features.</p>
+            </div>
+            <div class="project-card">
+                <h3>Software Company Website</h3>
+                <p>Professional company site with modern UI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:amanmonty553@gmail.com">amanmonty553@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/danty1522" target="_blank">github.com/danty1522</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/abc/" target="_blank">linkedin.com/in/abc</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aman Monty | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+```
+```
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222222;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff00b3;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(to right, #00c3ff, #00e5ff);
+    color: #222;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin-right: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text span {
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.hero-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Skills */
+.skills-grid {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.skills-grid div {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+/* Projects */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        margin-right: 0;
+    }
+}
+```
 
 
 ## OUTPUT
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/8a704ec1-c77e-42a3-817b-c78b63c1484f" />
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/50de6fdc-f7be-4bdb-b80f-f72ceed730db" />
+
 
 
 ## RESULT
